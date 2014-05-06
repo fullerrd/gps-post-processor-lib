@@ -1,0 +1,21 @@
+<% provide(:title, @user.name) %>
+<% provide(:user, @user) %>
+<div class="row">
+    <section>
+      <h1>
+        Welcome to the Post-Processing Engine <%= @user.name.split(" ")[0] %>!
+      </h1>
+
+    </section>
+</div>
+<div class="row">
+
+    <section>
+      <h2>Choose the CSV file you would like to apply corrections to, and wait to download the corrected file. This should only takes a few seconds depending on your connection speed. The file must be created using the GPSLogger android application to work with the post processing engine.</h2>
+  </section>
+</div>      
+<div class="row">
+		<section>
+			<%= render 'form' %>
+		</section>
+</div>

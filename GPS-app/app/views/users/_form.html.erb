@@ -1,0 +1,8 @@
+<%= form_tag({action: :upload}, multipart: true) do %>
+  <%= file_field_tag 'gpsdatafile' ,class: "btn btn-large btn-primary"%>
+  <%= submit_tag("Submit", class: "btn btn-large btn-primary") %>
+<% end %>
+ 
+
+
+

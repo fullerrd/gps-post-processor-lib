@@ -1,0 +1,19 @@
+<%= form_for @user, :html => { :multipart => true } do |f| %>
+
+<p>
+	<%= f.file_field :photo %>
+</p>
+
+<p>
+	<%= f.submit %>
+</p>
+
+<%end%>
+
+%<div class="row">
+	<div class="span6 offset3">
+		<section>
+			<%= render 'form2' %>
+		</section>
+	</div>
+</div>

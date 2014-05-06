@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<% provide(:title, 'Home') %>
+<div class="center hero-unit" >
+  <div id="column1" style="float:right; margin:0; width:85%;">
+  <h3>Welcome to the Differential GPS Correction Service</h3>
+
+  
+  </div>
+  <div id="column2" style="float:left; margin:0; width:15%;">
+  	<%= link_to image_tag("gps.gif", id: "logo" , alt: "Rails", size: "110x110"), root_path%>
+  	<br> <h4>.</h4>
+  </div>
+  <h2>This is the home page for the
+    <a href="http://railstutorial.org/">Differential GPS Correction Service.</a>
+    The site is under construction through the month of April. Please check back in May!
+  </h2>
+
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+
